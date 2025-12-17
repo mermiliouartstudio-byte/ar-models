@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View in AR</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<model-viewer
+  src="stonebalanceclock.glb"
+  ios-src="stonebalanceclock.usdz"
+  ar
+  ar-modes="scene-viewer quick-look webxr"
+  camera-controls
+  auto-rotate
+  shadow-intensity="1">
+</model-viewer>
+
+</body>
+</html>
